@@ -1,4 +1,4 @@
-package pub;
+package pubManagement;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -117,7 +117,7 @@ public class AdminL {
 		btnNewButton.setBounds(1083, 101, 106, 37);
 		frame.getContentPane().add(btnNewButton);
 		
-		JButton btnLogin = new JButton("LOGIN");
+	/*	JButton btnLogin = new JButton("LOGIN");
 		btnLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 		
@@ -154,6 +154,6 @@ public class AdminL {
 		});
 		btnLogin.setFont(new Font("Tahoma", Font.BOLD, 13));
 		btnLogin.setBounds(948, 528, 98, 44);
-		frame.getContentPane().add(btnLogin);
+		frame.getContentPane().add(btnLogin); */
 	}
 }

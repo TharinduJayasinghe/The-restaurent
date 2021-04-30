@@ -51,12 +51,12 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/ASUS/Desktop/Res pro/RestaurentSystem (1)/RestaurentSystem/RestaurentSystem/Resources/rs2xml.jar">
+	<classpathentry kind="lib" path="C:/Users/ASUS/Desktop/Res pro/RestaurentSystem (1)/RestaurentSystem/RestaurentSystem/Resources/sqlitejdbc-v056.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/ASUS/Desktop/Res pro/RestaurentSystem (1)/RestaurentSystem/RestaurentSystem/Resources/sqlitejdbc-v056.jar">
+	<classpathentry kind="lib" path="E:/Software/JarFile/JARFiles/rs2xml.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
