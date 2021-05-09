@@ -1,4 +1,4 @@
-package pub;
+package pubManagement;
 
 import java.awt.EventQueue;
 
