@@ -1,4 +1,4 @@
-package pub;
+package pubManagement;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -26,7 +26,7 @@ public class Supplier {
 	private JFrame frame;
 	private JTable table;
 	private UpdateSup updates;
-	private Suplier supl;
+	
 	/**
 	 * Launch the application.
 	 */
@@ -79,7 +79,7 @@ public class Supplier {
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
-				UpdateSup up = new UpdateSup(supl);
+				UpdateSup up = new UpdateSup();
 				
 				UpdateSup.main(null);
 				
@@ -135,38 +135,7 @@ public class Supplier {
 			frame.getContentPane().add(scrollPane);
 
 			table = new JTable();
-			table.addMouseListener(new MouseAdapter() {
-				@Override
-				public void mouseClicked(MouseEvent e) {
-					int row = table.getSelectedRow();
-					String name = table.getValueAt(row, 0).toString();					
-				
-					String query = "select * from pub_supplier where Name = '"+name+"' ";
-
-					Statement sta;
-					try {
-						sta = connection.createStatement();
-					
-					ResultSet rs = sta.executeQuery(query);
-					
-					while (rs.next()) {
-						int id = rs.getInt(1);
-						String Name = rs.getString(2);
-						String company = rs.getString(3);
-						String brand = rs.getString(4);
-						String phone = rs.getString(5);
-						System.out.println("asd");
-						System.out.println(name+phone+brand+company);
-						supl = new Suplier(id, Name, company, brand, phone);
-
-					}
-					} catch (SQLException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
-					}
-					
-				}
-			});
+			
 
 			table.setModel(tableModel);
 			scrollPane.setViewportView(table);
@@ -189,17 +158,6 @@ public class Supplier {
 		btnNewButton_3.setBounds(77, 115, 89, 44);
 		frame.getContentPane().add(btnNewButton_3);
 	}
-
-	public Suplier getSup() {
-		return supl;
-	}
-
-	public void setSup(Suplier sup) {
-		this.supl = sup;
-	}
-	
-	
-	
 	
 	
 }

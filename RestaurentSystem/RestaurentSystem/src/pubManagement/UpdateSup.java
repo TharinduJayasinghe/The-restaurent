@@ -1,4 +1,4 @@
-package pub;
+package pubManagement;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -197,21 +197,4 @@ public class UpdateSup {
 	}
 	
 	
-	
-		public UpdateSup(Suplier sup) {
-		
-			initialize();
-			insertdata(sup);
-		
-		}
-
-		public void insertdata( Suplier sup) {
-			
-			
-			textField.setText(Integer.toString(sup.getId()));
-			textField_1.setText(sup.getName());
-			textField_2.setText(sup.getCompany());
-			textField_3.setText(sup.getBrand());
-			textField_4.setText(sup.getPhone());
-		}
 }
